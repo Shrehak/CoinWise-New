@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+:root {
+    --primary-color: #4a4a4a;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-gradient);
+    color: var(--primary-color);
+}
+
+.main-wrapper {
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: var(--card-shadow);
+}
+
+.sidebar .nav-link {
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+    color: var(--success-color);
+    transform: translateX(5px);
+}
+
+.sidebar .logo-section {
+    margin-bottom: 30px;
+}
+
+.main-content {
+    background-color: transparent;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.stats-cards .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.stats-cards .card:hover {
+    transform: scale(1.05);
+}
+
+.balance-card {
+    background-color: #e9ecef;
+}
+
+.income-card {
+    background-color: #d4edda;
+}
+
+.expense-card {
+    background-color: #f8d7da;
+}
+
+.transaction-history .list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.transaction-history li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.transaction-history li:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+.money.plus {
+    color: var(--success-color);
+}
+
+.money.minus {
+    color: var(--danger-color);
+}
+
+.charts-section canvas {
+    max-height: 300px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    .main-content {
+        width: 100%;
+    }
+}
