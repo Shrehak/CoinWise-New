@@ -1,4 +1,4 @@
-# CoinWise - A Smarter Way to Track Expenses 💰
+# CoinWise - A Smarter Way to Track Your Expenses 💰
 
 **CoinWise** is a modern, lightweight expense tracker built with React, TypeScript, and Vite. It helps users efficiently manage their finances by logging expenses, tracking budgets, and providing insightful analytics.
 
